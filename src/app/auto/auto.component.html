@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Auto Car</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let autos of auto | async">
+          <td>{{autos.id}}</td>
+          <td>{{autos.name}}</td>
+          <td>{{autos.color}}</td>
+          <td>{{autos.date}}</td>
+          <td>
+            <!-- <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateEmployee(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">Details</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
