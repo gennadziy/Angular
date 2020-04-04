@@ -6,6 +6,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+          <th>Id</th>
           <th>Firstname</th>
           <th>Lastname</th>
           <th>Email</th>
@@ -14,6 +15,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let employee of employees | async">
+          <td>{{employee.id}}</td>
           <td>{{employee.firstName}}</td>
           <td>{{employee.lastName}}</td>
           <td>{{employee.emailId}}</td>
@@ -26,4 +28,3 @@
     </table>
   </div>
 </div>
-
