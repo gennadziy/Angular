@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ModeService {
 
-  private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/modes';
+  private baseUrl = 'http://angular6.herokuapp.com/springboot-crud-rest/api/v1/modes';
 
   constructor(private http: HttpClient) { }
 

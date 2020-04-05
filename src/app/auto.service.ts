@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AutoService {
 
-  private baseUrl = 'http://localhost:8080/springboot-crud-rest/api/v1/autos';
+  private baseUrl = 'http://angular6.herokuapp.com/springboot-crud-rest/api/v1/autos';
 
   constructor(private http: HttpClient) { }
 
